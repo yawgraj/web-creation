@@ -1,0 +1,249 @@
+
+html, body {
+    height: 100%;
+
+    user-select: none;
+    -moz-user-select: none;
+
+    background-color: var(--Certified);
+
+    overflow-x: hidden !important;
+}
+
+.title-container {
+    height: 40vh;
+}
+
+.about-me-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    width: 80vw;
+
+    margin-left: 10vw;
+
+    background-color: var(--accent);
+}
+
+.title-hello {
+    font-size: 10rem;
+    font-weight: 700;
+    font-family: 'LDFComicSans', cursive;
+
+    color: var(--dark);
+}
+
+.title-name {
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: 'LDFComicSans', cursive;
+
+    color: var(--Certified);
+
+    position: relative;
+    top: -2.5rem;
+    background-color: var(--accent);
+}
+
+.about-me {
+    opacity: 0;
+    font-size: 2rem;
+    font-family: 'Avenir', sans-serif;
+
+    padding-right: 15%;
+    padding-left: 15%;
+
+    text-align: center;
+
+    color: var(--Certified);
+
+    animation: fade-in-right 1s 1s ease forwards;
+}
+
+.about-me-image {
+    height: 20vw;
+    width: 20vw;
+
+    opacity: 0;
+
+    box-shadow: 10px 5px 10px black;
+
+    border-radius: 100%;
+
+    animation: fade-in-left 1s 1s ease forwards;
+}
+
+.experience-title {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'LDFComicSans', cursive;
+
+    margin-top: 10vh;
+    margin-left: 10vw;
+
+    padding-left: 2vw;
+
+    width: 80vw;
+
+    text-align: center;
+}
+
+.experience-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    width: 80vw;
+
+    margin-left: 10vw;
+}
+
+.experience {
+    display: flex;
+    align-items: center;
+
+    opacity: 0;
+    font-size: 1.2rem;
+    font-family: 'Avenir', sans-serif;
+
+    text-align: center;
+
+    color: var(--dark);
+
+    animation: fade-in-right 1s 1s ease forwards;
+}
+
+.experience-image {
+    height: 25vw;
+    width: 25vw;
+
+    opacity: 0;
+
+    margin-top: 100px;
+
+    box-shadow: 10px 5px 10px black;
+
+    border-radius: 100%;
+
+    animation: fade-in-left 1s 1s ease forwards;
+}
+
+.contact-me-container {
+    margin-top: 10vh;
+
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'LDFComicSans', cursive;
+
+    text-align: center;
+}
+
+.contact-me-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 0.8rem;
+}
+
+.contact-me-icon {
+    width: 4rem;
+    height: 4rem;
+
+    opacity: 0;
+
+    animation: fade-in-left 1s 1s ease forwards;
+    margin: 0rem 0.8rem
+}
+
+.padding-footer {
+    height: 5vh;
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fade-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+
+    .about-me-image-container {
+        padding-bottom: 1.5rem;
+    }
+
+    .experience-container {
+        padding-top: 1rem;
+    }
+
+    .experience-image-container {
+        margin-top: 1rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    .about-me {
+        padding-left: 5%;
+        padding-right: 5%;
+
+        text-align: left;
+    }
+
+    .experience {
+        padding-left: 10%;
+    }
+
+    .title-container {
+        height: 45vh;
+    }
+
+    .experience-title {
+        text-align: left;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+}

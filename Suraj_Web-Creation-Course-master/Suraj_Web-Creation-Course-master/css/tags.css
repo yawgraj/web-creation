@@ -1,0 +1,84 @@
+
+.tags-wrapper {
+    position: relative;
+    top: -2rem;
+    height: 3rem;
+
+
+    overflow: hidden;
+}
+
+.title-tags {
+    position: relative;
+    top: 0;
+
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'ZCOOL KuaiLe', cursive;
+
+    color: var(--dark);
+
+    position: relative;
+
+    width: max-content;
+
+    animation: slide 9s steps(3) 1s infinite;
+}
+
+.title-tags li{
+    list-style: none;
+}
+
+.title-tags li span::before,
+.title-tags li span::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.title-tags li span::before {
+    background: var(--Certified);
+    animation: typewriter 3s 1s ease infinite;
+}
+
+.title-tags li span::after {
+    width: 0.125em;
+    background: var(--dark);
+    animation:
+        typewriter 3s 1s ease infinite,
+        blink 1000ms ease infinite;
+}
+
+@keyframes typewriter {
+    0% {
+        left: 0%;
+    }
+
+    40% {
+        left: 100%;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes slide {
+    100% {
+        transform: translateY(-100%);
+    }
+}
